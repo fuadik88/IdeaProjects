@@ -1,0 +1,14 @@
+#root{
+    -fx-background-image: url("bground.jpg");
+    -fx-background-size: cover;
+}
+
+#innerPane{
+    -fx-background-radius: 50;
+    -fx-background-color: #ffea00;
+}
+
+#btn1{
+    -fx-background-color: azure;
+    -fx-background-radius: 20;
+}

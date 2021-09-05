@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.Controller">
+   <children>
+      <Pane id="innerPane" fx:id="innerPane" layoutX="141.0" layoutY="92.0" prefHeight="199.0" prefWidth="303.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <TextField fx:id="txtbox1" layoutX="176.0" layoutY="98.0" promptText="username" />
+            <PasswordField fx:id="pswdbox1" layoutX="176.0" layoutY="138.0" promptText="*******" />
+            <JFXButton id="btn1" fx:id="btn1" buttonType="RAISED" layoutX="196.0" layoutY="176.0" onAction="#clicked" prefHeight="42.0" prefWidth="108.0" ripplerFill="#bf2e2e" text="Login" textFill="#bf2e2e" />
+            <Label alignment="CENTER" layoutX="196.0" layoutY="14.0" prefHeight="25.0" prefWidth="108.0" text="LOGIN">
+               <font>
+                  <Font name="Bell MT" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="98.0" text="Username">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="138.0" text="Password">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label id="rsLabel" fx:id="rsLabel" alignment="CENTER" disable="true" layoutX="19.0" layoutY="253.0" prefHeight="26.0" prefWidth="462.0" textAlignment="CENTER" textFill="#ee0b0b">
+               <font>
+                  <Font name="DokChampa" size="18.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

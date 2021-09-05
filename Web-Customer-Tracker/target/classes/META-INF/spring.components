@@ -1,0 +1,6 @@
+com.customer_tracker.controller.CustomerController=org.springframework.stereotype.Component
+com.customer_tracker.controller.HomePageController=org.springframework.stereotype.Component
+com.customer_tracker.dao.CustomerList=org.springframework.stereotype.Component
+com.customer_tracker.entity.Customer=javax.persistence.Entity,javax.persistence.Table
+com.customer_tracker.service.ServiceImpl=org.springframework.stereotype.Component
+com.customer_tracker.testdb.TestDB=javax.servlet.annotation.WebServlet
