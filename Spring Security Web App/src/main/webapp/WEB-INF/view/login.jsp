@@ -13,9 +13,13 @@
             <i class="anime">Invalid username or password !</i>
         </c:if>
         <p>
-            Username: <input type="text" name="username" placeholder="Username"/> </p>
+            Username: <label>
+            <input type="text" name="username" placeholder="Username"/>
+        </label></p>
         <p>
-            Password: <input type="text" name="password" placeholder="Password"/> </p>
+            Password: <label>
+            <input type="text" name="password" placeholder="Password"/>
+        </label></p>
         <input type="submit" value="Sign in"/>
     </form:form>
 </div>

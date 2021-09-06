@@ -8,11 +8,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class LoginController {
     @GetMapping("/signin")
     String formLogin(){
-        return "login";
-    }
-
-    @PostMapping("/auth")
-    String authenticateUser(){
-        return "homepage";
+        return "fancy-login";
     }
 }

@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -12,12 +13,12 @@
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
         }
+        .btnLogout {width: 80px; height: 30px; font-weight: bolder}
     </style>
 </head>
 <body class="noselect">
 <script>
     let num = 0;
-    document.getElementById("count").innerHTML = num.toString();
     function counter() {
         num = num + 500;
         document.getElementById("count").innerHTML = num.toString();
@@ -26,5 +27,9 @@
 <h1>You came...</h1>
 <br>
 <h2 id="count" style="font-size: xxx-large; margin-left: 3%; display: inline; border: 10px dashed springgreen;" onmouseenter="counter()">0</h2>
+<br><br><br>
+<form:form action="logout" method="POST">
+    <input type="submit" value="Logout" class="btnLogout"/>
+</form:form>
 </body>
 </html>
