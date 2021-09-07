@@ -1,0 +1,6 @@
+com\spring_security\config\SecurityConfig.class
+com\spring_security\controller\LoginController.class
+com\spring_security\config\WebSecurityInitializer.class
+com\spring_security\config\AppConfig.class
+com\spring_security\config\DispatcherServletInitializer.class
+com\spring_security\controller\WebController.class

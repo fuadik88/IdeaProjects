@@ -14,16 +14,20 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         User.UserBuilder users = User.withDefaultPasswordEncoder();
 
-        auth.inMemoryAuthentication().withUser(users.username("fuadik88").password("rembo1").roles("ADMIN"))
+        auth.inMemoryAuthentication().withUser(users.username("fuadik88").password("rembo1").roles("ADMIN", "EMPLOYEE"))
                 .withUser(users.username("masterkill7").password("master").roles("EMPLOYEE"))
-                .withUser(users.username("harry").password("osborn").roles("MANAGER"));
+                .withUser(users.username("harry").password("osborn").roles("MANAGER", "EMPLOYEE"));
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().anyRequest().authenticated().and()
+        http.authorizeRequests().antMatchers("/").hasRole("EMPLOYEE")
+                .antMatchers("/management/**").hasRole("MANAGER")
+                .antMatchers("/system/**").hasRole("ADMIN")
+                .and()
                 .formLogin().loginPage("/signin")
                 .loginProcessingUrl("/auth").permitAll()
-                .and().logout().permitAll();
+                .and().logout().permitAll()
+                .and().exceptionHandling().accessDeniedPage("/nowayin");
     }
 }

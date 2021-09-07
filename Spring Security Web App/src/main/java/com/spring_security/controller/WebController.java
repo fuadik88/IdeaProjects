@@ -9,4 +9,14 @@ public class WebController {
     String showHome() {
         return "homepage";
     }
+
+    @GetMapping("/management")
+    String manage(){
+        return "management";
+    }
+
+    @GetMapping("/system")
+    String accessConsole(){
+        return "console";
+    }
 }

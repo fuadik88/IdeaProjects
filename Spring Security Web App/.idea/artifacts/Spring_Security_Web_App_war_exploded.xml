@@ -26,6 +26,10 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:5.5.1" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-crypto:5.5.1" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:5.5.1" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-taglibs:5.5.1" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-acl:5.5.1" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.3.8" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.3.8" />
           <element id="library" level="project" name="Maven: javax.servlet.jsp:javax.servlet.jsp-api:2.3.1" />
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
           <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.3.0" />
